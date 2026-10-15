@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Learning Management Portal</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #1e293b;
+        }
+        header {
+            background: #15345b;
+            color: white;
+            padding: 24px 7%;
+        }
+        header h1 { margin: 0 0 8px; }
+        nav {
+            background: #24528a;
+            padding: 14px 7%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+        main { padding: 28px 7%; }
+        .welcome {
+            background: white;
+            padding: 26px;
+            border-radius: 12px;
+            border-left: 5px solid #2874d0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #102b4d12;
+        }
+        .card h3 { color: #24528a; margin-top: 0; }
+        .tag {
+            display: inline-block;
+            background: #dceafe;
+            color: #174782;
+            padding: 5px 9px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+        a.resource { color: #1d62ad; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>University Learning Management Portal</h1>
+    <p>Learn. Collaborate. Achieve.</p>
+</header>
+
+<nav>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#resources">Resources</a>
+    <a href="#announcements">Assignments</a>
+    <a href="#exams">Examinations</a>
+</nav>
+
+<main>
+    <section class="welcome">
+        <h2>Welcome to the University LMS</h2>
+        <p>Access course information, connect with faculty, find learning materials,
+           and stay up to date with academic activities.</p>
+        <span class="tag">Academic Year 2026–2027</span>
+    </section>
+
+    <section id="courses">
+        <h2>Available Courses</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Cloud Computing</h3>
+                <p>Virtualization, cloud platforms, and distributed systems.</p>
+                <p><strong>Faculty:</strong> Dr. Arun Kumar</p>
+            </article>
+            <article class="card">
+                <h3>DevOps Engineering</h3>
+                <p>CI/CD, Docker, Kubernetes, and automation.</p>
+                <p><strong>Faculty:</strong> Prof. Priya Sharma</p>
+            </article>
+            <article class="card">
+                <h3>Cybersecurity</h3>
+                <p>Network security, identity, and threat prevention.</p>
+                <p><strong>Faculty:</strong> Dr. K. Ravi</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="faculty">
+        <h2>Faculty Profiles</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Dr. Arun Kumar</h3>
+                <p>Cloud Computing Department</p>
+                <p>Research: Distributed Systems</p>
+            </article>
+            <article class="card">
+                <h3>Prof. Priya Sharma</h3>
+                <p>Software Engineering Department</p>
+                <p>Research: DevOps Automation</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Learning Resources</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Lecture Notes</h3>
+                <p>Course notes and classroom presentations.</p>
+                <a class="resource" href="#courses">Browse course materials</a>
+            </article>
+            <article class="card">
+                <h3>Practical Guides</h3>
+                <p>Laboratory instructions and practical exercises.</p>
+                <a class="resource" href="#courses">Browse practical guides</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="announcements">
+        <h2>Assignment Announcements</h2>
+        <div class="card">
+            <h3>DevOps Mini Project</h3>
+            <p>Build and deploy a containerized web application using CI/CD.</p>
+            <p><strong>Due date:</strong> 30 October 2026</p>
+            <span class="tag">Assignment Open</span>
+        </div>
+    </section>
+
+    <section id="exams">
+        <h2>Examination Schedule</h2>
+        <div class="card">
+            <p><strong>Cloud Computing:</strong> 10 November 2026</p>
+            <p><strong>DevOps Engineering:</strong> 13 November 2026</p>
+            <p><strong>Cybersecurity:</strong> 17 November 2026</p>
+            <p>Check official university announcements for confirmed timings.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    University Learning Management Portal | Powered by Docker and Kubernetes
+</footer>
+</body>
+</html>
